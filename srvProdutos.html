@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentização</title>
+    <link rel="stylesheet" href="srvProdutos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="apresentacao">
+            <h1>Dr. Marcelo Marinho</h1>
+            <p class="det">OAB: 00000000</p>
+            <h2 class="hBanner">A Lei a seu favor.</h2>
+
+            
+                <a href="https://api.whatsapp.com/send?phone=5521981642987&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20advogado." target="_blank" class="ancoraWhats">
+                    <img src="icon-whatsapp.gif" id="btnWts" alt="">
+                    <p>Fale agora com um advogado agora!</p>
+                </a>
+           
+            
+        </div>
+        <div class="imgBanner"><img id="imgCB" src="33.png" alt=""></div>
+
+        <nav>
+            <section class="nav">
+                <a href="opcao2.html">Opção 2</a>
+                <a href="#servicos">Serviços</a>
+                <a href="">Contato</a>
+                <a href="">Nossos materiais</a>
+            </section>
+
+            <section class="redesSociais">
+                <a href=""><img class="social" src="icons-instagram.gif" alt=""></a>
+                <a href=""><img class="social" src="icons-facebook.png" alt=""></a>
+                <a href="https://api.whatsapp.com/send?phone=5521981642987&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20advogado." target="_blank"><img class="social" src="icon-whatsapp.gif" alt=""></a>
+            </section>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <a href="https://api.whatsapp.com/send?phone=5521981642987&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20advogado." target="_blank">
+        <img id="fixo"  src="icon-whatsapp.gif">
+        </a>
+        <section class="sobreme">
+            <p class="sobre">Advogado especializado em Direito Imobiliário com ênfase na regularização de imóveis
+                urbanos e rurais; Direito Trabalhista e Previdenciário.</p>
+            <p class="sobre">Com escritório no Rio de Janeiro Marcelo Marinho - Advogados Associados, diferencia-se por
+                acompanhar a crescente complexidade do mundo jurídico. Atuando nas Áreas do Direito do
+                Consumidor,Trabalhista, Cível, Criminal, Imobiliário, Previdenciário, Família, Orfãos e Sucessões,
+                Marcelo Marinho de Oliveira - Advogados Associados, está sempre presente nas iniciativas das mais
+                importantes entidades empresariais, jurídicas e acadêmicas.</p>
+        </section>
+
+        <section class="servicos" id="servicos">
+            <div class="produtos">
+                <div class="imobiliario">
+                    <h2>Direito Imobiliário.</h2>
+                    <img src="arow-E.png" class="btnAntes" id="btnImobiliarioAntes"
+                        onclick="rolagemEsquerda('cardsImobiliario')" style="--topo:50%; --rodape:50%; ">
+                    <img src="arow-D.png" class="btnDepois" id="btnImobiliarioDepois"
+                        onclick="rolagemDireita('cardsImobiliario')" style="--topo:50%; --rodape:50%;">
+                    <div class="cards" id="cardsImobiliario">
+                        <div class="card" id="">
+                            <h3>Consultoria:</h3>
+                            <p class="descricao">Dúvidas sobre contratos:</p>
+                            <p class="descricao">compra e venda</p>
+                            <p class="descricao">locação</p>
+                            <p class="descricao">condomínio</p>
+                        </div>
+                        <div class="card">
+                            <h3>Análise de documentos:</h3>
+                            <p class="descricao">Contratos</p>
+                            <p class="descricao">escrituras</p>
+                            <p class="descricao">certidões</p>
+                        </div>
+                        <div class="card">
+                            <h3>Elaboração de contratos:</h3>
+                            <p class="descricao">Compra</p>
+                            <p class="descricao">venda</p>
+                            <p class="descricao">locação</p>
+                            <p class="descricao">doação</p>
+                        </div>
+                        <div class="card">
+                            <h3>Regularização de imóveis:</h3>
+                            <p class="descricao">Averbação de construção</p>
+                            <p class="descricao">usucapião</p>
+                            <p class="descricao">regularização de posse com registro no RGI.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Divisão de bens:</h3>
+                            <p class="descricao">Partilha em: </p>
+                            <p class="descricao">divórcio</p>
+                            <p class="descricao">inventário</p>
+                            <p class="descricao"></p>
+                        </div>
+                        <div class="card">
+                            <h3>Assessoria em ações:</h3>
+                            <p class="descricao">Despejo</p>
+                            <p class="descricao">cobrança de aluguel</p>
+                            <p class="descricao">usucapião</p>
+                            <p class="descricao">reintegração de posse</p>
+                            <p class="descricao">imissão de posse.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Consultoria em financiamento:</h3>
+                            <p class="descricao">Análise de contratos</p>
+                            <p class="descricao">renegociação</p>
+                        </div>
+                        <div class="card">
+                            <h3>Direito do consumidor:</h3>
+                            <p class="descricao">Problemas com construtoras e incorporadoras.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Imposto sobre transmissão de bens (ITBI):</h3>
+                            <p class="descricao">Cálculo</p>
+                            <p class="descricao">pagamento</p>
+                        </div>
+                        <div class="card">
+                            <h3>Planejamento sucessório:</h3>
+                            <p class="descricao">Testamento</p>
+                            <p class="descricao">inventário</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="familia">
+                    <h2>Direito de Família.</h2>
+                    <img src="arow-E.png" class="btnAntes" id="btnFamiliaAntes"
+                        onclick="rolagemEsquerda('cardsFamilia')" style="--topo:50%; --rodape:50%;">
+                    <img src="arow-D.png" class="btnDepois" id="btnFamiliaDepois"
+                        onclick="rolagemDireita('cardsFamilia')" style="--topo:50%; --rodape:50%;">
+                    <div class="cards" id="cardsFamilia">
+                        <div class="card" id="">
+                            <h3>Divórcio:</h3>
+                            <p class="descricao">Concensual</p>
+                            <p class="descricao">Litigioso</p>
+                            <p class="descricao">-Com ou sem bens.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Guarda de filhos:</h3>
+                            <p class="descricao">Compartilhada</p>
+                            <p class="descricao">Unilateral</p>
+                        </div>
+                        <div class="card">
+                            <h3>Pensão alimentícia:</h3>
+                            <p class="descricao">Fixação</p>
+                            <p class="descricao">Revisão</p>
+                            <p class="descricao">Execução</p>
+                        </div>
+                        <div class="card">
+                            <h3>Bens dos filhos:</h3>
+                            <p class="descricao">Partilha em caso de divórcio</p>
+                        </div>
+                        <div class="card">
+                            <h3>União estável:</h3>
+                            <p class="descricao">Reconhecimento </p>
+                            <p class="descricao">Dissolução</p>
+                            <p class="descricao">Direitos</p>
+                        </div>
+                        <div class="card">
+                            <h3>Adoção</h3>
+                            <p class="descricao">Nacional</p>
+                            <p class="descricao">Internacional</p>
+                        </div>
+                        <div class="card">
+                            <h3>Violência doméstica:</h3>
+                            <p class="descricao">Medidas protetivas</p>
+                            <p class="descricao">Acompanhamento processual</p>
+                        </div>
+                        <div class="card">
+                            <h3>Testamento:</h3>
+                            <p class="descricao">Planejamento sucessório familiar</p>
+                        </div>
+                        <div class="card">
+                            <h3>Inventário:</h3>
+                            <p class="descricao">Partilha de bens após falecimento/p>
+                        </div>
+                        <div class="card">
+                            <h3>Curatela:</h3>
+                            <p class="descricao">Nomeação</p>
+                            <p class="descricao">Acompanhamento</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="civil">
+                    <h2>Direito Civil.</h2>
+                    <img src="arow-E.png" class="btnAntes" id="btnCiviloAntes" onclick="rolagemEsquerda('cardsCivil')"
+                        style="--topo:50%; --rodape:50%;">
+                    <img src="arow-D.png" class="btnDepois" id="btnCivilDepois" onclick="rolagemDireita('cardsCivil')"
+                        style="--topo:50%; --rodape:50%;">
+                    <div class="cards" id="cardsCivil">
+                        <div class="card" id="">
+                            <h3>Responsabilidade civil:</h3>
+                            <p class="descricao">Acidentes de trânsito:</p>
+                            <p class="descricao">Danos materiais e morais.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Contratos:</h3>
+                            <p class="descricao">Análise</p>
+                            <p class="descricao">Elaboração</p>
+                            <p class="descricao">Execução</p>
+                        </div>
+                        <div class="card">
+                            <h3>Cobrança de dívidas:</h3>
+                            <p class="descricao">Elaboração de ações</p>
+                            <p class="descricao">Execução</p>
+                        </div>
+                        <div class="card">
+                            <h3>Posse e propriedade:</h3>
+                            <p class="descricao">Ações possessórias</p>
+                            <p class="descricao">Demarcação de terras</p>
+                        </div>
+                        <div class="card">
+                            <h3>Direito do consumidor:</h3>
+                            <p class="descricao">Defesa em relação a produtos e serviços </p>
+                        </div>
+                        <div class="card">
+                            <h3>Herança:</h3>
+                            <p class="descricao">Inventário</p>
+                            <p class="descricao">Partilha</p>
+                            <p class="descricao">Testamento</p>
+                        </div>
+                        <div class="card">
+                            <h3>Doações:</h3>
+                            <p class="descricao">Elaboração de contratos</p>
+                            <p class="descricao">Impostos</p>
+                        </div>
+                        <div class="card">
+                            <h3>Usucapião:</h3>
+                            <p class="descricao">Aquisição de propriedade por tempo de posse</p>
+                        </div>
+                        <div class="card">
+                            <h3>Direito de vizinhança:</h3>
+                            <p class="descricao">Conflitos entre vizinhos</p>
+                            <p class="descricao">Cercas</p>
+                            <p class="descricao">Árvores</p>
+                        </div>
+                        <div class="card">
+                            <h3>Danos morais:</h3>
+                            <p class="descricao">Indenização por ofensas</p>
+                            <p class="descricao">Calúnias</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bancario">
+                    <h2>Direito Bancário.</h2>
+                    <img src="arow-E.png" class="btnAntes" id="btnBancarioAntes"
+                        onclick="rolagemEsquerda('cardsbancario')" style="--topo:50%; --rodape:50%;">
+                    <img src="arow-D.png" class="btnDepois" id="btnBancarioDepois"
+                        onclick="rolagemDireita('cardsbancario')" style="--topo:50%; --rodape:50%;">
+                    <div class="cards" id="cardsbancario">
+                        <div class="card" id="">
+                            <h3>Análise de contratos:</h3>
+                            <p class="descricao">Financiamentos</p>
+                            <p class="descricao">Empréstimos</p>
+                            <p class="descricao">Cartão de crédito</p>
+                        </div>
+                        <div class="card">
+                            <h3>Renegociação de dívidas:</h3>
+                            <p class="descricao">Propostas</p>
+                            <p class="descricao">Acordos</p>
+                        </div>
+                        <div class="card">
+                            <h3>Cobrança indevida:</h3>
+                            <p class="descricao">Devolução de valores</p>
+                            <p class="descricao">Danos morais</p>
+                        </div>
+                        <div class="card">
+                            <h3>Impugnação de tarifas:</h3>
+                            <p class="descricao">Análise da legalidade.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Cancelamento de contratos:</h3>
+                            <p class="descricao">Cartões de crédito </p>
+                            <p class="descricao">Seguros</p>
+                        </div>
+                        <div class="card">
+                            <h3>Investimentos:</h3>
+                            <p class="descricao">Aplicação em fundos</p>
+                            <p class="descricao">Ações</p>
+                            <p class="descricao">Falência e recuperação judicial:</p>
+                            <p class="descricao">-Direito dos credores</p>
+                        </div>
+                        <div class="card">
+                            <h3>Leilões:</h3>
+                            <p class="descricao">Participação</p>
+                            <p class="descricao">Aquisição de bens</p>
+                        </div>
+                        <div class="card">
+                            <h3>Direito do consumidor:</h3>
+                            <p class="descricao">Defesa em relação a serviços bancários</p>
+                        </div>
+                        <div class="card">
+                            <h3>Seguro:</h3>
+                            <p class="descricao">Cobrança de sinistro</p>
+                            <p class="descricao">pagameAnálise de contrato</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trabalhista">
+                    <h2>Direito Trabalhista.</h2>
+                    <img src="arow-E.png" class="btnAntes" id="btnTrabalhistaAntes"
+                        onclick="rolagemEsquerda('cardsTrabalhista')" style="--topo:50%; --rodape:50%;">
+                    <img src="arow-D.png" class="btnDepois" id="btnTrabalhistaDepois"
+                        onclick="rolagemDireita('cardsTrabalhista')" style="--topo:50%; --rodape:50%;">
+                    <div class="cards" id="cardsTrabalhista">
+                        <div class="card" id="">
+                            <h3>Rescisão contratual:</h3>
+                            <p class="descricao">Cálculo de verbas rescisórias:</p>
+                            <p class="descricao">Homologação</p>
+                        </div>
+                        <div class="card">
+                            <h3>Afastamento por doença:</h3>
+                            <p class="descricao">Auxílio-doença</p>
+                            <p class="descricao">Aposentadoria por invalidez</p>
+                        </div>
+                        <div class="card">
+                            <h3>Acidentes de trabalho:</h3>
+                            <p class="descricao">Indenização</p>
+                            <p class="descricao">Benefícios previdenciários</p>
+                        </div>
+                        <div class="card">
+                            <h3>Assédio moral e sexual:</h3>
+                            <p class="descricao">Medidas protetivas</p>
+                            <p class="descricao">Indenização</p>
+                        </div>
+                        <div class="card">
+                            <h3>Horas extras:</h3>
+                            <p class="descricao">Cálculo </p>
+                            <p class="descricao">Pagamento</p>
+                        </div>
+                        <div class="card">
+                            <h3>Férias:</h3>
+                            <p class="descricao">Cálculo</p>
+                            <p class="descricao">Abono pecuniário</p>
+                        </div>
+                        <div class="card">
+                            <h3>FGTS:</h3>
+                            <p class="descricao">Saque</p>
+                            <p class="descricao">Multa rescisória</p>
+                        </div>
+                        <div class="card">
+                            <h3>Maternidade e paternidade:</h3>
+                            <p class="descricao">Licença</p>
+                            <p class="descricao">Benefícios</p>
+                        </div>
+                        <div class="card">
+                            <h3>Trabalhador doméstico:</h3>
+                            <p class="descricao">Direitos trabalhistas</p>
+                        </div>
+                        <div class="card">
+                            <h3>Terceirização:</h3>
+                            <p class="descricao">Direitos dos trabalhadores terceirizados</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="previdenciario">
+                    <h2>Direito Previdenciario.</h2>
+                    <img src="arow-E.png" class="btnAntes" id="btnPrevidenciarioAntes"
+                        onclick="rolagemEsquerda('cardsPrevidenciario')" style="--topo:50%; --rodpe:50%;">
+                    <img src="arow-D.png" class="btnDepois" id="btnPrevidenciarioDepois"
+                        onclick="rolagemDireita('cardsPrevidenciario')" style="--topo:50%; --rodape:50%;">
+                    <div class="cards" id="cardsPrevidenciario">
+                        <div class="card" id="">
+                            <h3>Análise de benefícios:</h3>
+                            <p class="descricao">Verificação da possibilidade de aposentadoria por: </p>
+                            <p class="descricao">-Idade</p>
+                            <p class="descricao">-Invalidez</p>
+                            <p class="descricao">-Pensão por morte</p>
+                            <p class="descricao">-Outros benefícios</p>
+                        </div>
+                        <div class="card">
+                            <h3>Simulação de aposentadoria:</h3>
+                            <p class="descricao">Cálculo aproximado do valor do benefício e da idade para aposentadoria
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Regularização de contribuições:</h3>
+                            <p class="descricao">Correção de dados cadastrais</p>
+                            <p class="descricao">Averbação de tempo de contribuição</p>
+                        </div>
+                        <div class="card">
+                            <h3>Revisão de benefícios:</h3>
+                            <p class="descricao"> Aumento do valor do benefício</p>
+                            <p class="descricao">Inclusão de dependentes</p>
+                        </div>
+                        <div class="card">
+                            <h3>Acomapanhamento de processos administrativos:</h3>
+                            <p class="descricao">Agendamento de perícias </p>
+                            <p class="descricao">Acompanhamento de andamento processual</p>
+                        </div>
+                        <div class="card">
+                            <h3>Ação judicial:</h3>
+                            <p class="descricao">Impetração de mandado de segurança</p>
+                            <p class="descricao">Ação de conhecimento</p>
+                        </div>
+                        <div class="card">
+                            <h3>Recursos administrativos e judiciais:</h3>
+                            <p class="descricao">Interposição de recursos contra decisões do INSS</p>
+                        </div>
+                        <div class="card">
+                            <h3>Assistência dem perícias médicas:</h3>
+                            <p class="descricao">Acompanhamento do segurado em perícias médicas</p>
+                        </div>
+                        <div class="card">
+                            <h3>Orientação sobre:</h3>
+                            <p class="descricao">Auxílio-doença</p>
+                            <p class="descricao">Salário-maternidade</p>
+                            <p class="descricao">Outros benefícios</p>
+                        </div>
+                        <div class="card">
+                            <h3>Planejamento previdenciário:</h3>
+                            <p class="descricao">Orientação sobre a melhor forma de se aposentar e garantir o futuro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+       <!-- <section class="contato" id="contato">
+
+
+            <h2 class="heading">Contato</h2>
+            <div class="row">
+                <form>
+                    <input type="text" placeholder="Nome" required="required" id="nomeContato" class="box">
+                    <input type="e-mail" placeholder="E-mail" id="email" class="box">
+                    <input type="number" placeholder="Número de contato" id="numeroTel" class="box">
+
+                    <textarea name="" placeholder="mensagem" required="required" cols="30" rows="10" id="msg"
+                        class="box"></textarea>
+                    <input id="submitContato" type="submit" value="Enviar mensagem" class="btn">
+                </form>
+
+
+            </div>
+
+        </section>-->
+
+    </main>
+
+    <footer></footer>
+    <script src="carrossel.js"></script>
+</body>
+
+</html>
