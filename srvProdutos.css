@@ -1,0 +1,321 @@
+:root {
+    --corFundoPrincipal: #141A46;
+    --corContrasteFundo: #221900;
+    --corFontePrincipal: dd;
+    --corFonteSecundaria: dd;
+    --corCards: dd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    width: 100%;
+    height: 350px;
+    ;
+    background: linear-gradient(0deg, rgba(9, 9, 9, 1) 30%, rgba(42, 42, 42, 1) 44%, rgba(3, 0, 0, 1) 77%);
+    position: relative;
+}
+
+#banner {}
+
+.det {
+    font-size: x-small;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+
+}
+
+h1 {
+    font-size: 400%;
+    font-family: "Ysabeau SC", serif;
+}
+
+h1,
+.hBanner {
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 25px;
+    left: 10%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hBanner {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: xx-large;
+
+}
+
+.cta {
+    width: 20%;
+    height: 40px;
+    
+    
+    
+    display: flex;
+
+}
+.ancoraWhats{
+    display:flex;
+    width:25%;
+    height:15%;
+    color:white;
+    font-size: larger;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    background-color: #40C351;
+    border: 2px solid #40C351;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration:none;
+}
+.ancoraWhats:visited{
+    list-style: none;
+    text-decoration: none;
+}
+#btnWts {
+    width: 11%;
+    height: 11%x;
+    border-radius:25px;
+    
+}
+
+#imgCB {
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 425px;
+
+}
+
+nav {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: absolute;
+    bottom: 10px;
+    left: 20%;
+    right: 10%;
+
+
+}
+
+nav>.nav {
+    display: flex;
+    gap: 1%;
+    width: 60%;
+    margin-top: 1%;
+
+}
+
+.redesSociais {
+    display: flex;
+    justify-content: right;
+    /* position:absolute;
+    right:4%;
+    gap:8%;*/
+
+}
+
+.social {
+    width: 70%;
+    border-radius: 25px;
+
+}
+
+nav>.nav>a {
+    width: 30%;
+    height: 30px;
+    color: white;
+}
+
+
+nav>.redesSociais>a {
+    height: 30px;
+    color: white;
+}
+
+.sobreme{
+    width:80%;
+    margin:0.5% auto;
+    padding:2%;
+    
+}
+.sobre {
+    text-align: center;
+    font-size: 120%;
+    font-family: "Poppins", serif;
+  font-weight: 300;
+}
+
+
+#fixo{
+    position:fixed;
+    top:90%;
+    left:0.5%;
+    z-index:2;
+    width:4%;
+    height:7%;
+    border-radius:25%;
+}
+
+.servicos {
+
+    width: 99%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+
+}
+
+.produtos {
+
+    width: 98%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.imobiliario,
+.familia,
+.civil,
+.bancario,
+.trabalhista,
+.previdenciario {
+    position: relative;
+}
+
+h2 {
+    margin: 10px auto;
+    text-align: center;
+    
+}
+
+.cards {
+
+    width: 2100px;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 18px;
+    padding: 10px;
+    display: flex;
+
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+
+.card {
+
+    width: 150px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px rgba(30, 28, 58, 0.651);
+    border-radius: 25px 5px;
+    object-fit: cover;
+    overflow: hidden;
+    flex-shrink: 0;
+    border:1px solid black;
+
+
+}
+
+.cardDireita {
+    animation: rolagemDireita 2s linear forwards;
+
+
+}
+
+.cardEsquerda {
+    animation: rolagemEsquerda 2s linear forwards;
+
+}
+
+
+
+@keyframes rolagemEsquerda {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: -25%;
+    }
+
+}
+
+@keyframes rolagemDireita {
+
+    from {
+        left: -25%;
+    }
+
+    to {
+
+        left: 0px;
+    }
+}
+
+h3 {
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 90%;
+    overflow: hidden;
+
+}
+
+.ps {
+    border: 1px solid blue;
+}
+
+p.descricao {
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: initial;
+}
+
+.btnAntes,
+.btnDepois {
+    position: absolute;
+    top: var(--topo);
+    bottom: var(--rodape);
+    z-index: 1;
+}
+
+.btnDepois {
+    right: 5px;
+
+
+}

@@ -1,0 +1,293 @@
+:root {
+    --corFundoPrincipal: #141A46;
+    --corContrasteFundo: #221900;
+    --corFontePrincipal: dd;
+    --corFonteSecundaria: dd;
+    --corCards: dd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(0deg, rgba(9, 9, 9, 1) 30%, rgba(42, 42, 42, 1) 44%, rgba(3, 0, 0, 1) 77%);
+    position: relative;
+}
+
+
+
+.det {
+    font-size: x-small;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+
+}
+
+h1 {
+    font-size: 400%;
+    font-family: "Ysabeau SC", serif;
+}
+
+h1,
+.hBanner {
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 25px;
+    left: 10%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hBanner {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: xx-large;
+    background: none;
+
+}
+
+.cta {
+    width: 20%;
+    height: 40px;
+    
+    
+    
+    display: flex;
+
+}
+.ancoraWhats{
+    display:flex;
+    width:25%;
+    height:15%;
+    color:white;
+    font-size: larger;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    background-color: #40C351;
+    border: 2px solid #40C351;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration:none;
+}
+.ancoraWhats:visited{
+    list-style: none;
+    text-decoration: none;
+}
+#btnWts {
+    width: 11%;
+    height: 11%x;
+    border-radius:25px;
+    
+}
+
+#imgCB {
+    width: ;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 425px;
+
+}
+
+nav {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: absolute;
+    bottom: 10px;
+    left: 20%;
+    right: 10%;
+
+
+}
+
+nav>.nav {
+    display: flex;
+    gap: 1%;
+    width: 60%;
+    margin-top: 1%;
+
+}
+
+.redesSociais {
+    display: flex;
+    justify-content: right;
+    /* position:absolute;
+    right:4%;
+    gap:8%;*/
+
+}
+
+.social {
+    width: 70%;
+    border-radius: 25px;
+
+}
+
+nav>.nav>a {
+    width: 30%;
+    height: 30px;
+    color: white;
+}
+
+
+nav>.redesSociais>a {
+    height: 30px;
+    color: white;
+}
+#fixo{
+    position:fixed;
+    top:90%;
+    left:0.5%;
+    z-index:2;
+    width:4%;
+    height:7%;
+    border-radius:25%;
+}
+
+.sobreme{
+    width:80%;
+    margin:0.5% auto;
+    padding:2%;
+    
+}
+.sobre {
+    text-align: center;
+    font-size: 120%;
+    font-family: "Poppins", serif;
+  font-weight: 300;
+}
+
+
+
+.dd{
+    width: 100dvw;
+    height:800px;
+    z-index:1;
+    position:relative;
+    overflow: hidden;
+
+}
+
+.produtos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 2500px;
+    height: 780px;
+    gap: 10px;
+    margin: 10px 20px;
+    overflow: hidden;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 600px;
+    height: 700px;
+    margin: 30px auto;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 25px 5px;
+    overflow: hidden;
+    padding: 1%;
+    box-shadow: 5px 5px 10px black;
+    overflow: hidden;
+    
+
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 1%;
+    overflow: hidden;
+    gap: 3%;
+}
+
+h2 {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(0deg, rgba(9, 9, 9, 1) 30%, rgba(42, 42, 42, 1) 44%, rgba(3, 0, 0, 1) 77%);
+    text-align: center;
+    padding: 15px;
+    color: white;
+
+}
+
+h4 {
+    margin-top: 1%;
+}
+@keyframes abc {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: -1200px;
+    }
+
+}
+
+@keyframes abcd {
+
+    from {
+        left:-1200px ;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+.cardDireita {
+    position:absolute;
+    animation:abcd 2s linear forwards;
+
+}
+
+.cardEsquerda { 
+       position:absolute;
+
+    animation: abc 2s linear forwards;
+
+}
+
+
+
+
+
+.btnAntes, .btnDepois{
+    position:absolute;
+    left:45%;
+    right: 50%;
+    z-index: 2;
+}
+.btnDepois{
+    left:50%;
+    right: 45%;
+    
+}
+
+
